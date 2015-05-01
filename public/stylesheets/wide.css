@@ -72,13 +72,12 @@ a.menu:hover {
 .clear {
 	clear: both;
 }
-
 .imagen {
 	display: inline;
 	float:left;
-	margin: 150px;
+	margin: 200px;
 }
 #imagen2 {
 	float: right;
-	margin: 150px;
+	margin: 200px;
 }

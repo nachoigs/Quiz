@@ -74,11 +74,9 @@ a.menu:hover {
 }
 
 .imagen {
-	display: inline;
-	float:left;
-	margin: 150px;
+	display: block;
+	margin: 20px;
 }
 #imagen2 {
-	float: right;
-	margin: 150px;
+	margin: 20px;
 }
