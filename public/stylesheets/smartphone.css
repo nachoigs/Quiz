@@ -1,82 +1,9 @@
-body{
-	background-blend-mode:color;
-	background-color: #FE9A2E
-}
+body             { background: #333; }
 
-table {
-	
-	width: 70%;
-	padding: 0px;
-	margin-left: auto;
-	margin-right : auto;
-	border-spacing: 0px;
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 0.8em;
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: #333;
-}
-th, td {
-	padding: 0.5em;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #333;
-}
-th {
-	background-color: #E2E2E2;
-}
-td {
-	background-color: #F0F0F0;
-}
+#page-wrap:after { content: "Smartphone Layout"; }
 
-ul {
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px;
-	border-left-width: 1px;
-	border-left-style: solid;
-	border-left-color: #CCC;
-}
-li {
-	display: inline;
-}
-a.menu {
-	font-family: Arial, Helvetica, sans-serif;
-	color: #000;
-	text-decoration: none;
-	font-size: 1em;
-	display: block;
-	padding: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
-	float: left;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #CCC;
-	background-color: #EAEAEA;
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: #CCC;
-	border-right-width: 1px;
-	border-right-style: solid;
-	border-right-color: #CCC;
-	border-color: rebeccapurple;
-	border-style: ridge;
-	border-width: 10px;
-}
-a.menu:hover {
-	color: #FFF;
-	background-color: #666;
-	border-style: groove;
-}
-.clear {
-	clear: both;
-}
-
-.imagen {
-	display: block;
-	margin: 20px;
-}
-#imagen2 {
-	margin: 20px;
-}
+h2 span, section h3, label.rem 
+                 { display: none; }
+body             { font-size: xx-large; }
+input, button    { font-size: x-large; }
+footer           { font-size: large; }
