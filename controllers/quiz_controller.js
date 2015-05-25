@@ -113,3 +113,32 @@ exports.destroy = function(req, res) {
     res.redirect('/quizes');
   }).catch(function(error){next(error)});
 };
+
+// Statistics
+exports.statistics = function (req, res, next) {
+  models.Quiz.count().then(function(numberquestions){
+    console.log ("1");
+    models.Comment.count().then(function(numbercomments){
+       console.log ("2");
+      models.Comment.count({ include: models.Quiz, distinct: 'quizId' }).then(function(questionswithcomments){
+         console.log ("3");
+        res.render('quizes/statistics.ejs' , {   numberquestions: numberquestions,
+                                              numbercomments: numbercomments,
+                                              questionswithcomments : questionswithcomments,
+                                              comments4questions: (numbercomments/numberquestions),
+                                              questionswithoutcomments : (numberquestions - questionswithcomments),
+                                              errors: []
+        });
+
+      }).catch(function (error){
+          next(error);
+      });
+
+    }).catch(function (error){
+           next(error);
+    });
+
+  }).catch(function (error){
+           next(error);
+  });
+};
